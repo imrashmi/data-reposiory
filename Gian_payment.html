@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for effect */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .qr-code {
+            margin-right: 20px;
+        }
+
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .details {
+            line-height: 1.6;
+        }
+
+        .details h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .details p {
+            margin: 5px 0;
+        }
+
+        .pay-button {
+            display: inline-flex;
+            padding: 15px 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #a2b9bc;
+            color: #0D1117;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .pay-button img {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px;
+            margin-right: 5px; /* Space between icon and text */
+        }
+
+        .pay-button:hover {
+            background-color: #0D1117;
+            color: #fff;
+        }
+
+    </style>
+    <title>MHPDIMG-2024</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/imrashmi/data-repository@main/nitr_logo.png">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="https://nitrkl.ac.in/assets/video/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="qr-code">
+            <img src="https://cdn.jsdelivr.net/gh/imrashmi/data-repository@main/nit_qr_code.png" alt="UPI QR Code">
+        </div>
+        <div class="details">
+            <h3>Bank Account Details</h3>
+            <p><strong>Account No:</strong> 10138951784</p>
+            <p><strong>IFSC No:</strong> SBIN0002109</p>
+            <p><strong>Account Name:</strong> Continuing Education, NIT Rourkela</p>
+            <p><strong>Branch:</strong> State Bank of India, NIT Campus, Rourkela</p>
+            <a class="pay-button"><img src="https://cdn.jsdelivr.net/gh/imrashmi/data-repository@main/upi-icon.png" alt="Pay Icon"> <b> 01389517841@sbi </b> </a>
+        </div>
+    </div>
+</body>
+</html>
